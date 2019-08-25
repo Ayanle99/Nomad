@@ -9,7 +9,7 @@
 <img src="images/bus_icon_1_.png" alt="drawing" width="200"/>
 <img src="images/bus_icon_2.png" alt=drawing" width="200"/>
 
-<img src="images/bus_icon_3.png	" alt=drawing" width="200"/>
+
 
 
 
