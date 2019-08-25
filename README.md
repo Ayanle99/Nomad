@@ -10,6 +10,7 @@
   <img src="images/bus_icon_1_.png" width="200" />
   <img src="images/bus_icon_2.png" width="200" /> 
   <img src="images/bus_icon_3.png" width="200" />
+  <img src="images/bus_icon_4.png" width="200"/>
 </p>
 
 
