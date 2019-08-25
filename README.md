@@ -4,6 +4,7 @@
 
 > git clone https://github.com/Ayanle99/Nomad.git
 
+## Some screenshots
 
 <img src="images/bus_icon_1_.png" alt="drawing" width="200"/>
 
