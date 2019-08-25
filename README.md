@@ -5,9 +5,7 @@
 > git clone https://github.com/Ayanle99/Nomad.git
 
 
-
-![](images/bus_icon_1_.png  =250x)
-
+<img src="images/bus_icon_1_.png" alt="drawing" width="200"/>
 
 
 ## Add Jsoup dependency to your gradle
