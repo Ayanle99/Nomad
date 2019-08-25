@@ -6,9 +6,11 @@
 
 ## Some screenshots
 
-<img src="images/bus_icon_1_.png" alt="drawing" width="200"/>
-<img src="images/bus_icon_2.png" alt=drawing" width="200"/>
-
+<p float="left">
+  <img src="images/bus_icon_1_.png" width="100" />
+  <img src="images/bus_icon_2.png" width="100" /> 
+  <img src="images/bus_icon_3.png" width="100" />
+</p>
 
 
 
