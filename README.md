@@ -6,7 +6,7 @@
 
 
 
-![](images/bus_icon_1_.png  =100x20)
+![](images/bus_icon_1_.png  =250x)
 
 
 
