@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nomad.nomad">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:allowTaskReparenting="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".route_2_west.Heenipen_And_Franklin_Activity"></activity>
+        <activity android:name=".route_2_west.Franklin_Ave_Nicollet_Activity" />
+        <activity android:name=".route_2_west.Franklin_Ave_Chicago_Activity" />
+        <activity android:name=".route_2_west.Franklin_Ave_Station_Activity" />
+        <activity android:name=".route_2_west.Riverside_25_Activity" />
+        <activity android:name=".route_2_west.Willey_Hall_Activity" />
+        <activity android:name=".route_2_west.Onterio_Beacon_Activity" />
+        <activity android:name=".route_2_west.University_And_15_Activity" />
+        <activity android:name=".route_2_west.Eight_and_hennipen_Activity" />
+        <activity android:name=".route_2_west.Seventh_Second_Activity" />
+        <activity android:name=".route_2_east.S_2Activity" />
+        <activity android:name=".route_2_east.H_8Activity" />
+        <activity android:name=".route_2_east.F_15Activity" />
+        <activity android:name=".route_2_east.ON_HActivity" />
+        <activity android:name=".route_2_east.And_HActivity" />
+        <activity android:name=".route_2_east.Riv25Activity" />
+        <activity android:name=".route_2_east.FASActivity" />
+        <activity android:name=".route_2_east.FACAActivity" />
+        <activity android:name=".route_2_east.FANAActivity" />
+        <activity android:name=".route_2_east.FAHAActivity" />
+        <activity android:name=".route_2_east.Henn22Activity" />
+        <activity android:name=".route_11_south_stops_panel.SouthRoute11_PanelActivity" />
+        <activity android:name=".route_11_north_stops_panel.NorthRoute11_PanelActivity" />
+        <activity android:name=".route_2_west_stops_panel.route_2_west_stops_Activity" />
+        <activity android:name=".route_2_east_stops_panel.route_2_east_stops_Activity" />
+        <activity android:name=".route_11.NorthSouthActivity" />
+        <activity android:name=".route_2.EastWestActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

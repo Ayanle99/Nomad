@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".route_2.EastWestActivity">
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="\t\tRoute # 2"
+        android:textColor="#ffffff"
+
+        android:background="@drawable/textview_shape"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="30sp"/>
+
+    <Button
+        android:id="@+id/route_2_east_direciton_btn"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:text="East"
+        android:textColor="#ffff"
+        android:background="@drawable/round_btn"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="220dp"
+        android:textAllCaps="false"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/route_2_west_direction_btn"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:text="West"
+        android:textColor="#ffff"
+        android:background="@drawable/round_btn"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="320dp"
+        android:textAllCaps="false"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_width="350dp"
+        android:layout_height="200dp">
+
+        <Button
+            android:id="@+id/helpBtn"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:text="Help ?"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textSize="40sp"
+            android:textColor="#ffff"
+            android:backgroundTint="#FF0000"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

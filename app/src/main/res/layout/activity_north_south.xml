@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".route_11.NorthSouthActivity">
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="\t\tRoute # 11"
+        android:textColor="#ffffff"
+        android:background="@drawable/textview_shape"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="30sp"/>
+
+    <Button
+        android:id="@+id/route_11_north_direciton_btn"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:text="North"
+        android:background="@drawable/round_btn"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="220dp"
+        android:textAllCaps="false"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/route_11_south_direction_btn"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:text="South"
+        android:textColor="#ffffff"
+        android:background="@drawable/round_btn"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="320dp"
+        android:textAllCaps="false"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
