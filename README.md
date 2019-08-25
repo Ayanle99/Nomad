@@ -13,6 +13,13 @@
   <img src="images/bus_icon_4.png" width="200"/>
 </p>
 
+<p float="left">
+
+ <img src="images/bus_icon_5.png" width="200" />
+
+
+
+</p>
 
 
 
