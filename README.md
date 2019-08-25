@@ -16,7 +16,7 @@
 <p float="left">
 
  <img src="images/bus_icon_5.png" width="200" />
-
+ <img src="images/bus_icon_7.png" width="200"/>
 
 
 </p>
