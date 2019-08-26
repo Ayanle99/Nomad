@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -18,6 +19,8 @@ import com.nomad.nomad.route_2.EastWestActivity;
 public class MainActivity extends AppCompatActivity {
 
     private ListView mListview;
+    private Button go_to_metro_transit_website_btn;
+
     private int [] images = {
 
             R.drawable.bus_icon,
@@ -38,6 +41,15 @@ public class MainActivity extends AppCompatActivity {
         mListview = (ListView)findViewById(R.id.listview);
         CustomAdapter customAdapter = new CustomAdapter();
         mListview.setAdapter(customAdapter);
+
+        go_to_metro_transit_website_btn = (Button)findViewById(R.id.goToMetroTransitWebsite_btn);
+
+        go_to_metro_transit_website_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, OpenWebPageActivity.class));
+            }
+        });
 
 
         mListview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
