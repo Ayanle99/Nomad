@@ -18,6 +18,8 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class N_46_Activity extends AppCompatActivity {
 
@@ -32,6 +34,37 @@ public class N_46_Activity extends AppCompatActivity {
         load_btn = (Button)findViewById(R.id.pl_50_btn);
         result_Textview = (TextView)findViewById(R.id.pl_50_textview);
         current_time = (TextView)findViewById(R.id.current_time);
+
+
+        Thread time_Thread = new Thread(){
+
+            @Override
+            public void run() {
+                try{
+
+                    while(!isInterrupted()){
+
+
+                        Thread.sleep(1000);
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                Date d=new Date();
+                                SimpleDateFormat sdf=new SimpleDateFormat("hh:mm a");
+                                String currentDateTimeString = sdf.format(d);
+                                current_time.setText("Current Time : " +currentDateTimeString);
+                            }
+                        });
+                    }
+                    
+                }catch (InterruptedException e){
+                    e.printStackTrace();
+                }
+
+            }
+        };
+        time_Thread.start();
+
 
 
 
