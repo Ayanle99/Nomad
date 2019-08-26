@@ -13,6 +13,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.nomad.nomad.R;
+import com.nomad.nomad.route_11_north.I_35_Activity;
 import com.nomad.nomad.route_11_north.N_46_Activity;
 
 import java.util.ArrayList;
@@ -108,6 +109,10 @@ public class NorthRoute11_PanelActivity extends AppCompatActivity {
                 switch (i){
                     case 0:
                         startActivity(new Intent(NorthRoute11_PanelActivity.this, N_46_Activity.class));
+                        break;
+
+                    case 1:
+                        startActivity(new Intent(NorthRoute11_PanelActivity.this, I_35_Activity.class));
                         break;
                 }
             }
