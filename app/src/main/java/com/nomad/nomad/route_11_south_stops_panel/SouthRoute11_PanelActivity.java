@@ -2,15 +2,19 @@ package com.nomad.nomad.route_11_south_stops_panel;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import com.nomad.nomad.R;
+import com.nomad.nomad.route_11_south.ColumbiaHeightsTransitCenterActivity;
+import com.nomad.nomad.route_11_south.Grand_St_and_29th_Ave_Activity;
 
 import java.util.ArrayList;
 
@@ -102,6 +106,27 @@ public class SouthRoute11_PanelActivity extends AppCompatActivity {
         };
 
         listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                switch (i){
+
+                    case 0:
+                        startActivity(new Intent(SouthRoute11_PanelActivity.this,
+                                ColumbiaHeightsTransitCenterActivity.class));
+                        break;
+
+                    case 1:
+                        startActivity(new Intent(SouthRoute11_PanelActivity.this,
+                                Grand_St_and_29th_Ave_Activity
+                                        .class));
+                        break;
+
+
+                }
+            }
+        });
 
     }
 }
