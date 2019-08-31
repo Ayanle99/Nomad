@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".OpenWebPageActivity"></activity>
+        <activity android:name=".OpenWebPageActivity" />
         <activity android:name=".route_11_north.Col_H_Activity" />
         <activity android:name=".route_11_north.G_29_Activity" />
         <activity android:name=".route_11_north.Lowry_Activity" />

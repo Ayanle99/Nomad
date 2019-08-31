@@ -19,12 +19,14 @@ import org.jsoup.select.Elements;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 
 public class N_G_Activity extends AppCompatActivity {
 
     private Button load_btn;
     private TextView result_Textview, current_time;
+    private ArrayList<String> arrayList = new ArrayList<String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -117,7 +119,11 @@ public class N_G_Activity extends AppCompatActivity {
 
                     for (Element time : times) {
                         builder.append("\n").append("Arriving : ").append(time.text()).append("\n\n");
+                        arrayList.add(time.text());
                     }
+
+
+
 
                 } catch (IOException e) {
                     builder.append("Error : ").append(e.getMessage()).append("\n");
@@ -128,6 +134,7 @@ public class N_G_Activity extends AppCompatActivity {
                         result_Textview.setText("");
                         result_Textview.setMovementMethod(new ScrollingMovementMethod());
                         result_Textview.setText(builder.toString());
+
                     }
                 });
 
