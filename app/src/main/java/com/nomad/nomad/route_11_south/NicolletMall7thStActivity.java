@@ -22,7 +22,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Grand_St_and_29th_Ave_Activity extends AppCompatActivity {
+public class NicolletMall7thStActivity extends AppCompatActivity {
 
     private Button load_btn;
     private TextView result_Textview, current_time;
@@ -31,10 +31,10 @@ public class Grand_St_and_29th_Ave_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_grand__st_and_29th__ave_);
+        setContentView(R.layout.activity_nicollet_mall7th_st);
 
-        load_btn = (Button)findViewById(R.id.grand_st_29_btn);
-        result_Textview = (TextView)findViewById(R.id.grand_st_29_textview);
+        load_btn = (Button)findViewById(R.id.nicollet_mall_7th_btn);
+        result_Textview = (TextView)findViewById(R.id.nicollet_mall_7th_textview);
         current_time = (TextView)findViewById(R.id.current_time);
 
         Thread time_Thread = new Thread(){
@@ -110,7 +110,7 @@ public class Grand_St_and_29th_Ave_Activity extends AppCompatActivity {
 
                 try {
 
-                    Document doc = Jsoup.connect("http://svc.metrotransit.org/NexTrip/11/1/29GR").get();
+                    Document doc = Jsoup.connect("http://svc.metrotransit.org/NexTrip/11/1/7SNI").get();
                     Elements times = doc.select("DepartureText");
 
 
@@ -138,7 +138,5 @@ public class Grand_St_and_29th_Ave_Activity extends AppCompatActivity {
             }
         }).start();
     }
-
-
 
 }

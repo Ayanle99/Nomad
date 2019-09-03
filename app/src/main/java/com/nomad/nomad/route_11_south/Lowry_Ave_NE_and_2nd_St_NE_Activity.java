@@ -22,7 +22,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Grand_St_and_29th_Ave_Activity extends AppCompatActivity {
+public class Lowry_Ave_NE_and_2nd_St_NE_Activity extends AppCompatActivity {
 
     private Button load_btn;
     private TextView result_Textview, current_time;
@@ -31,11 +31,12 @@ public class Grand_St_and_29th_Ave_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_grand__st_and_29th__ave_);
+        setContentView(R.layout.activity_lowry__ave__ne_and_2nd__st__ne_);
 
-        load_btn = (Button)findViewById(R.id.grand_st_29_btn);
-        result_Textview = (TextView)findViewById(R.id.grand_st_29_textview);
+        load_btn = (Button)findViewById(R.id.lowry_ne_btn);
+        result_Textview = (TextView)findViewById(R.id.lowry_ne_textview);
         current_time = (TextView)findViewById(R.id.current_time);
+
 
         Thread time_Thread = new Thread(){
 
@@ -66,9 +67,6 @@ public class Grand_St_and_29th_Ave_Activity extends AppCompatActivity {
         };
         time_Thread.start();
 
-
-
-
         load_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View view) {
@@ -95,8 +93,6 @@ public class Grand_St_and_29th_Ave_Activity extends AppCompatActivity {
             }
         });
 
-
-
     }
     private void getTimes() {
 
@@ -110,7 +106,7 @@ public class Grand_St_and_29th_Ave_Activity extends AppCompatActivity {
 
                 try {
 
-                    Document doc = Jsoup.connect("http://svc.metrotransit.org/NexTrip/11/1/29GR").get();
+                    Document doc = Jsoup.connect("http://svc.metrotransit.org/NexTrip/11/1/LW2S").get();
                     Elements times = doc.select("DepartureText");
 
 
@@ -138,7 +134,6 @@ public class Grand_St_and_29th_Ave_Activity extends AppCompatActivity {
             }
         }).start();
     }
-
 
 
 }

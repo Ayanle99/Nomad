@@ -14,7 +14,11 @@ import android.widget.TextView;
 
 import com.nomad.nomad.R;
 import com.nomad.nomad.route_11_south.ColumbiaHeightsTransitCenterActivity;
+import com.nomad.nomad.route_11_south.DeLaSalle_High_School_Activity;
 import com.nomad.nomad.route_11_south.Grand_St_and_29th_Ave_Activity;
+import com.nomad.nomad.route_11_south.Lowry_Ave_NE_and_2nd_St_NE_Activity;
+import com.nomad.nomad.route_11_south.NicolletMall7thStActivity;
+import com.nomad.nomad.route_11_south.Nicollet_Mall_3rd_st_Activity;
 
 import java.util.ArrayList;
 
@@ -122,6 +126,37 @@ public class SouthRoute11_PanelActivity extends AppCompatActivity {
                                 Grand_St_and_29th_Ave_Activity
                                         .class));
                         break;
+
+                    case 2:
+                        startActivity(new Intent(SouthRoute11_PanelActivity.this,
+                                Lowry_Ave_NE_and_2nd_St_NE_Activity
+
+                                        .class));
+                        break;
+
+                    case 3:
+                        startActivity(new Intent(SouthRoute11_PanelActivity.this,
+                                DeLaSalle_High_School_Activity
+
+                                        .class));
+                        break;
+
+                    case 4:
+                        startActivity(new Intent(SouthRoute11_PanelActivity.this,
+                                Nicollet_Mall_3rd_st_Activity
+
+
+                                        .class));
+                        break;
+
+                    case 5:
+                        startActivity(new Intent(SouthRoute11_PanelActivity.this,
+                                NicolletMall7thStActivity
+
+
+                                        .class));
+                        break;
+
 
 
                 }

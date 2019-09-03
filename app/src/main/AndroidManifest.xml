@@ -11,7 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".route_11_south.Grand_St_and_29th_Ave_Activity"></activity>
+        <activity android:name=".route_11_south.NicolletMall7thStActivity"></activity>
+        <activity android:name=".route_11_south.Nicollet_Mall_3rd_st_Activity" />
+        <activity android:name=".route_11_south.DeLaSalle_High_School_Activity" />
+        <activity android:name=".route_11_south.Lowry_Ave_NE_and_2nd_St_NE_Activity" />
+        <activity android:name=".route_11_south.Grand_St_and_29th_Ave_Activity" />
         <activity android:name=".route_11_south.ColumbiaHeightsTransitCenterActivity" />
         <activity android:name=".OpenWebPageActivity" />
         <activity android:name=".route_11_north.Col_H_Activity" />
