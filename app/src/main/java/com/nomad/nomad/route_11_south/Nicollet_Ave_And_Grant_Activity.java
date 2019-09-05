@@ -1,6 +1,5 @@
 package com.nomad.nomad.route_11_south;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
@@ -10,7 +9,6 @@ import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.nomad.nomad.R;
 
@@ -24,21 +22,21 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class NicolletMall7thStActivity extends AppCompatActivity {
+public class Nicollet_Ave_And_Grant_Activity extends AppCompatActivity {
 
     private Button load_btn;
     private TextView result_Textview, current_time;
     private ArrayList<String> arrayList = new ArrayList<String>();
-    private String rs = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_nicollet_mall7th_st);
+        setContentView(R.layout.activity_nicollet__ave__and__grant_);
 
-        load_btn = (Button)findViewById(R.id.nicollet_mall_7th_btn);
-        result_Textview = (TextView)findViewById(R.id.nicollet_mall_7th_textview);
+        load_btn = (Button)findViewById(R.id.nicollet_ave_grant_btn);
+        result_Textview = (TextView)findViewById(R.id.nicollet_ave_grant_textview);
         current_time = (TextView)findViewById(R.id.current_time);
+
 
         Thread time_Thread = new Thread(){
 
@@ -69,9 +67,6 @@ public class NicolletMall7thStActivity extends AppCompatActivity {
         };
         time_Thread.start();
 
-
-
-
         load_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View view) {
@@ -98,8 +93,6 @@ public class NicolletMall7thStActivity extends AppCompatActivity {
             }
         });
 
-
-
     }
     private void getTimes() {
 
@@ -113,15 +106,16 @@ public class NicolletMall7thStActivity extends AppCompatActivity {
 
                 try {
 
-                    Document doc = Jsoup.connect("http://svc.metrotransit.org/NexTrip/11/1/7SNI").get();
+                    Document doc = Jsoup.connect("http://svc.metrotransit.org/NexTrip/11/1/GRNI").get();
                     Elements times = doc.select("DepartureText");
 
-                    rs += times.text();
 
                     for (Element time : times) {
                         builder.append("\n").append("Arriving : ").append(time.text()).append("\n\n");
                         arrayList.add(time.text());
                     }
+
+
 
 
                 } catch (IOException e) {
@@ -133,11 +127,6 @@ public class NicolletMall7thStActivity extends AppCompatActivity {
                         result_Textview.setText("");
                         result_Textview.setMovementMethod(new ScrollingMovementMethod());
                         result_Textview.setText(builder.toString());
-
-                        String[] sp = rs.split(" ");
-
-                        Toast.makeText(NicolletMall7thStActivity.this,
-                                rs, Toast.LENGTH_SHORT).show();
 
                     }
                 });

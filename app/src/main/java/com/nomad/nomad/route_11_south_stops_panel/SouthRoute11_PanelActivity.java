@@ -15,10 +15,17 @@ import android.widget.TextView;
 import com.nomad.nomad.R;
 import com.nomad.nomad.route_11_south.ColumbiaHeightsTransitCenterActivity;
 import com.nomad.nomad.route_11_south.DeLaSalle_High_School_Activity;
+import com.nomad.nomad.route_11_south.Fourth_And_38_St_Activity;
+import com.nomad.nomad.route_11_south.Fourth_Ave_And_Lake_Activity;
 import com.nomad.nomad.route_11_south.Grand_St_and_29th_Ave_Activity;
+import com.nomad.nomad.route_11_south.I_35_46_Activity;
 import com.nomad.nomad.route_11_south.Lowry_Ave_NE_and_2nd_St_NE_Activity;
 import com.nomad.nomad.route_11_south.NicolletMall7thStActivity;
+import com.nomad.nomad.route_11_south.Nicollet_Ave_46_St_Activity;
+import com.nomad.nomad.route_11_south.Nicollet_Ave_And_Grant_Activity;
 import com.nomad.nomad.route_11_south.Nicollet_Mall_3rd_st_Activity;
+import com.nomad.nomad.route_11_south.Pleasant_Ave_50th_Activity;
+import com.nomad.nomad.route_11_south.Third_And_Franklin_Activity;
 
 import java.util.ArrayList;
 
@@ -151,12 +158,43 @@ public class SouthRoute11_PanelActivity extends AppCompatActivity {
 
                     case 5:
                         startActivity(new Intent(SouthRoute11_PanelActivity.this,
-                                NicolletMall7thStActivity
-
-
-                                        .class));
+                                NicolletMall7thStActivity.class));
                         break;
 
+                    case 6:
+                        startActivity(new Intent(SouthRoute11_PanelActivity.this,
+                                Nicollet_Ave_And_Grant_Activity.class));
+                        break;
+
+                    case 7:
+                        startActivity(new Intent(SouthRoute11_PanelActivity.this,
+                                Third_And_Franklin_Activity.class));
+                        break;
+
+                    case 8:
+                        startActivity(new Intent(SouthRoute11_PanelActivity.this,
+                                Fourth_Ave_And_Lake_Activity.class));
+                        break;
+
+                    case 9:
+                        startActivity(new Intent(SouthRoute11_PanelActivity.this,
+                                Fourth_And_38_St_Activity.class));
+                        break;
+
+                    case 10:
+                        startActivity(new Intent(SouthRoute11_PanelActivity.this,
+                                I_35_46_Activity.class));
+                        break;
+
+                    case 11:
+                        startActivity(new Intent(SouthRoute11_PanelActivity.this,
+                                Nicollet_Ave_46_St_Activity.class));
+                        break;
+
+                    case 12:
+                        startActivity(new Intent(SouthRoute11_PanelActivity.this,
+                                Pleasant_Ave_50th_Activity.class));
+                        break;
 
 
                 }
